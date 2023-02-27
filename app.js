@@ -36,9 +36,7 @@ setInterval(() => {
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
   currentTime.innerHTML = `${h}:${m}:${s} ${ampm}`;
-  console.log(setTime);
   if (setTime == `${h}:${m} ${ampm}` && s == "00") {
-    console.log("playing");
     alarmAudio.play();
     alarmAudio.loop = true;
   }
