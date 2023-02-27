@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rubik+Vinyl&family=Wallpoet&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(75, 150, 241);
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content > h1 {
+  margin: 20px;
+}
+.time-selector {
+  display: flex;
+}
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.column > select {
+  padding: 8px;
+  margin: 0 5px 0 5px;
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 16px;
+}
+#alarm-button {
+  background-color: rgb(69, 138, 222);
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
